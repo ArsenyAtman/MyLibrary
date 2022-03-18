@@ -15,4 +15,3 @@ protected:
 
 	AString Description = AString();
 };
-
