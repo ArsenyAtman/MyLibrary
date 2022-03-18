@@ -124,7 +124,7 @@ EFileMode AFile::GetFileMode() const
 	return FileMode;
 }
 
-long AFile::GetFileSize() const
+int AFile::GetFileSize() const
 {
 	int CurrentPosition = ftell(FilePointer);
 	fseek(FilePointer, 0, SEEK_END);
