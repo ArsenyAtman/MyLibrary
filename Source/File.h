@@ -41,7 +41,7 @@ public:
 
 	EFileMode GetFileMode() const;
 
-	int GetFileSize() const;
+	long GetFileSize() const;
 
 	const AString& GetFilePath() const;
 
