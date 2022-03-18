@@ -1,0 +1,6 @@
+#include "MyLibrary.h"
+
+int main()
+{
+	return 0;
+}
