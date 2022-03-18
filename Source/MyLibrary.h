@@ -19,3 +19,5 @@
 
 #include "String.h"
 #include "Stringable.h"
+
+#include "Algo.h"
