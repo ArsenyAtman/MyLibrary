@@ -1,6 +1,6 @@
 #include "String.h"
 
-#include "Exception.h"
+#include "../Exception/Exception.h"
 
 AString::AString(const char* String)
 {

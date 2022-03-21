@@ -1,6 +1,6 @@
 #pragma once
 
-#include "String.h"
+#include "../String/String.h"
 
 class AConsole
 {

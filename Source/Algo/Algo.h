@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Array.h"
+#include "../Array/Array.h"
 
 class LAlgo
 {

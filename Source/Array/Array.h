@@ -2,7 +2,7 @@
 
 #include <initializer_list>
 
-#include "Iterable.h"
+#include "../Iterator/Iterable.h"
 
 template<class T>
 class TArray : public IIterable<T>
@@ -55,7 +55,7 @@ private:
 
 };
 
-#include "Exception.h"
+#include "../Exception/Exception.h"
 #include "ArrayIterator.h"
 
 template<class T>

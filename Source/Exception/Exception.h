@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Stringable.h"
-#include "String.h"
+#include "../String/Stringable.h"
+#include "../String/String.h"
 
 class AException : public IStringable
 {

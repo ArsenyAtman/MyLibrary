@@ -2,8 +2,8 @@
 
 #include <stdio.h>
 
-#include "String.h"
-#include "Array.h"
+#include "../String/String.h"
+#include "../Array/Array.h"
 
 
 enum class EFileMode : char
