@@ -1,23 +1,23 @@
 #pragma once
 
-#include "Array.h"
-#include "ArrayIterator.h"
+#include "Array/Array.h"
+#include "Array/ArrayIterator.h"
 
-#include "Console.h"
+#include "Console/Console.h"
 
-#include "Exception.h"
+#include "Exception/Exception.h"
 
-#include "File.h"
+#include "File/File.h"
 
-#include "Iterable.h"
-#include "Iterator.h"
-#include "IteratorWrap.h"
+#include "Iterator/Iterable.h"
+#include "Iterator/Iterator.h"
+#include "Iterator/IteratorWrap.h"
 
-#include "List.h"
-#include "ListElement.h"
-#include "ListIterator.h"
+#include "List/List.h"
+#include "List/ListElement.h"
+#include "List/ListIterator.h"
 
-#include "String.h"
-#include "Stringable.h"
+#include "String/String.h"
+#include "String/Stringable.h"
 
-#include "Algo.h"
+#include "Algo/Algo.h"

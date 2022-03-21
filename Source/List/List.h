@@ -3,8 +3,8 @@
 #include <initializer_list>
 
 #include "ListElement.h"
-#include "Iterable.h"
-#include "Stringable.h"
+#include "../Iterator/Iterable.h"
+#include "../String/String.h"
 
 template<class T>
 class TList : public IIterable<T>
