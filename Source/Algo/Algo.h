@@ -74,7 +74,35 @@ int LAlgo::LinearSearch(const IIterable<T>& Iterable, const T& ElementToFind)
 template<class T>
 int LAlgo::BinarySearch(const TArray<T>& SortedArray, const T& ElementToFind)
 {
-	return -1;
+	int LeftIndex = 0;
+	int RightIndex = SortedArray.GetLength() - 1;
+
+	while (LeftIndex != RightIndex)
+	{
+		int MiddleIndex = LeftIndex + (RightIndex - LeftIndex) / 2;
+
+		if (SortedArray[MiddleIndex] == ElementToFind)
+		{
+			return MiddleIndex;
+		}
+		else if (SortedArray[MiddleIndex] < ElementToFind)
+		{
+			LeftIndex = MiddleIndex + 1;
+		}
+		else if (SortedArray[MiddleIndex] > ElementToFind)
+		{
+			RightIndex = MiddleIndex - 1;
+		}
+	}
+
+	if (SortedArray[LeftIndex] == ElementToFind)
+	{
+		return LeftIndex;
+	}
+	else
+	{
+		return -1;
+	}
 }
 
 template<class T>
