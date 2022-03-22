@@ -69,7 +69,7 @@ TArray<T>::TArray(int Size)
 template<class T>
 TArray<T>::TArray(const std::initializer_list<T>& List)
 {
-	ActualSize = List.size();
+	ActualSize = static_cast<int>(List.size());
 	MaxSize = ActualSize + static_cast<int>(static_cast<double>(ActualSize) / 3);
 	ArrayOfElements = new T * [MaxSize];
 
