@@ -6,3 +6,7 @@
 !.gitignore
 !README.md
 !/Source/
+!MyLibrary.sln
+!MyLibrary.vcxproj
+!MyLibrary.vcxproj.filters
+!MyLibrary.vcxproj.user
