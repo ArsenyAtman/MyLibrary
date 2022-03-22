@@ -110,7 +110,7 @@ void LAlgo::Reverse(TList<T>& List)
 	TListElement<T>* ForwardElement = List.GetFirstElement();
 	TListElement<T>* BackwardElement = List.GetLastElement();
 
-	while (ForwardElement != BackwardElement || ForwardElement->GetNext() != BackwardElement)
+	while ((ForwardElement != BackwardElement) && (ForwardElement->GetPrev() != BackwardElement))
 	{
 		LAlgo::Swap(ForwardElement->GetValue(), BackwardElement->GetValue());
 
