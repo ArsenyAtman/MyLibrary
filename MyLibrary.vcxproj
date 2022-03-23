@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Algo\Algo.cpp" />
     <ClCompile Include="Source\Console\Console.cpp" />
     <ClCompile Include="Source\Exception\Exception.cpp" />
     <ClCompile Include="Source\File\File.cpp" />
@@ -27,7 +26,6 @@
     <ClCompile Include="Source\String\String.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Algo\Algo.h" />
     <ClInclude Include="Source\Array\Array.h" />
     <ClInclude Include="Source\Array\ArrayIterator.h" />
     <ClInclude Include="Source\Console\Console.h" />

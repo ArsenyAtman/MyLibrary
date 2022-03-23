@@ -14,9 +14,6 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Algo\Algo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Console\Console.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,7 +31,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Algo\Algo.h" />
     <ClInclude Include="Source\Array\Array.h" />
     <ClInclude Include="Source\Array\ArrayIterator.h" />
     <ClInclude Include="Source\Console\Console.h" />
