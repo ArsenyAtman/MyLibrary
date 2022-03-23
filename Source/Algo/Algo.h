@@ -29,9 +29,6 @@ public:
 	static void QuickSort(TArray<T>& Array, ESortType SortType);
 
 	template<class T>
-	static void MergeSort(TList<T>& List, ESortType SortType);
-
-	template<class T>
 	static void Reverse(TArray<T>& Array);
 
 	template<class T>
@@ -132,12 +129,6 @@ void LAlgo::QuickSort(TArray<T>& Array, ESortType SortType)
 		break;
 	}
 	
-}
-
-template<class T>
-void LAlgo::MergeSort(TList<T>& List, ESortType SortType)
-{
-
 }
 
 template<class T>
