@@ -54,8 +54,6 @@ public:
 
 	int GetLength() const;
 
-	operator TArray<T> () const;
-
 protected:
 
 private:
@@ -334,21 +332,4 @@ template<class T>
 int TList<T>::GetLength() const
 {
 	return Size;
-}
-
-template<class T>
-TList<T>::operator TArray<T>() const
-{
-	TArray<T> Array = TArray<T>(this->GetLength());
-
-	int i = 0;
-	IIteratorConst<T>* Iterator = this->GetConstIterator();
-	while (Iterator->HasMore())
-	{
-		Array.Add(Iterator->Get());
-		++i;
-		Iterator->Next();
-	}
-
-	return Array;
 }

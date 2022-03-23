@@ -3,6 +3,7 @@
 #include <initializer_list>
 
 #include "../Iterator/Iterable.h"
+#include "../List/List.h"
 
 template<class T>
 class TArray : public IIterable<T>
@@ -39,6 +40,9 @@ public:
 
 	bool operator == (const TArray<T>& Array) const;
 	bool operator != (const TArray<T>& Array) const { return !((*this) == Array); }
+
+	operator TList<T>() const;
+	TArray(const TList<T>& List);
 
 protected:
 
@@ -301,4 +305,29 @@ bool TArray<T>::operator == (const TArray<T>& Array) const
 	}
 
 	return true;
+}
+
+template<class T>
+TArray<T>::operator TList<T>() const
+{
+	TList<T> List = TList<T>();
+
+	for (int i = this->GetLength() - 1; i >= 0; --i)
+	{
+		List.PushForward(this->GetElementByIndex(i));
+	}
+
+	return List;
+}
+
+template<class T>
+TArray<T>::TArray(const TList<T>& List) : TArray(List.GetLength())
+{
+	IIteratorConst<T>* Iterator = List.GetConstIterator();
+	while (Iterator->HasMore())
+	{
+		this->Add(Iterator->Get());
+		Iterator->Next();
+	}
+	delete Iterator;
 }
